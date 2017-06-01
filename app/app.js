@@ -48,8 +48,6 @@ import createRoutes from './routes';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
-
-
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
 const openSansObserver = new FontFaceObserver('Open Sans', {});

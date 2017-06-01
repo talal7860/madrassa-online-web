@@ -15,7 +15,7 @@ import Footer from 'components/Footer';
 import Sidebar from 'components/Sidebar';
 import Content from 'components/Content';
 import withProgressBar from 'components/ProgressBar';
-import {Row, Col} from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 const AppWrapper = styled.div `
       width:100%;
@@ -38,18 +38,18 @@ const PageContent = styled.div `
 export function App(props) {
   return (
     <AppWrapper>
-      <Header/>
+      <Header />
       <PageContent>
         <Row>
-          <Sidebar/>
+          <Sidebar />
           <Col md={10}>
             <Row>
-              <Content/>
+              <Content />
             </Row>
           </Col>
         </Row>
       </PageContent>
-      <Footer/>
+      <Footer />
     </AppWrapper>
   );
 }

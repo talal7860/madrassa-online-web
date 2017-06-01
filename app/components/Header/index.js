@@ -11,7 +11,7 @@ import {
   NavDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
 } from 'reactstrap';
 import styled from 'styled-components';
 import Logo from 'components/Logo';
@@ -29,13 +29,13 @@ class Header extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
     };
   }
 
   toggle() {
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      dropdownOpen: !this.state.dropdownOpen,
     });
   }
   render() {
@@ -56,7 +56,7 @@ class Header extends React.Component {
               <Row>
                 <Col lg={12}>
                   <InputGroup>
-                    <Input type="text" className="form-control" placeholder="Search..."/>
+                    <Input type="text" className="form-control" placeholder="Search..." />
                     <span className="input-group-btn">
                       <Button color="primary">Search</Button>
                     </span>
@@ -73,7 +73,7 @@ class Header extends React.Component {
                     </DropdownToggle>
                     <DropdownMenu>
                       <DropdownItem>Profile</DropdownItem>
-                      <DropdownItem divider/>
+                      <DropdownItem divider />
                       <DropdownItem>Logout</DropdownItem>
                     </DropdownMenu>
                   </NavDropdown>

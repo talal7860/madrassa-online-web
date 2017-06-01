@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container} from 'reactstrap';
+import { Container } from 'reactstrap';
 import styled from 'styled-components';
 
 export const FooterStyle = styled.div `
